@@ -3,9 +3,11 @@
 
 # Cambiar al directorio del proyecto
 cd /app
+echo "install dependencies..."
+npm install
 
-echo "Ejecutando migraciones..."
+echo "Execute migrations..."
 npm run migration:run
 
-echo "Iniciando la app..."
+echo "Init app..."
 npm run start
